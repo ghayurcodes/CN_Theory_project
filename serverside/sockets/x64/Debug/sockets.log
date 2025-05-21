@@ -1,0 +1,3 @@
+﻿  server.cpp
+C:\Users\lifez\OneDrive\Desktop\Vs codep2\sockets\server.cpp(53,62): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  sockets.vcxproj -> C:\Users\lifez\OneDrive\Desktop\Vs codep2\sockets\x64\Debug\sockets.exe
