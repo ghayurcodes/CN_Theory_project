@@ -7,12 +7,12 @@
 
 using namespace std;
 
-struct Tour {
+class Tour {
     string name;
     float price;
     int people;
     string book_date;
-
+public:
     string serialize() const {  
         return name + "|" + to_string(price) + "|" + to_string(people) + "|" + book_date;
     }
@@ -43,7 +43,7 @@ vector<Tour> loadTours() {
 void saveTours(const vector<Tour>& tours) {
     ofstream fout("tours.txt");
     for (const auto& t : tours) {
-        fout << t.serialize() << endl;  // ? Safe usage now
+        fout << t.serialize() << endl;  
     }
 }
 
