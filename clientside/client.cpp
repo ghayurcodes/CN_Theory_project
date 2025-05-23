@@ -1,5 +1,5 @@
 #define _WINSOCK_DEPRECATED_NO_WARNINGS  // Fix deprecated warning for inet_addr()
-
+#include "menus.h"
 #include <iostream>
 #include <winsock2.h>
 #include <ws2tcpip.h> 
@@ -15,13 +15,13 @@ void sendRequest(string request) {
     struct sockaddr_in server;
     server.sin_family = AF_INET;
     server.sin_port = htons(12345);
-    server.sin_addr.s_addr = inet_addr("127.0.0.1");  // Deprecated but now allowed
+    server.sin_addr.s_addr = inet_addr("127.0.0.1");  
 
     if (connect(s, (struct sockaddr*)&server, sizeof(server)) == SOCKET_ERROR) {
         cout << "Connection failed. Error: " << WSAGetLastError() << endl;
         closesocket(s);
         WSACleanup();
-        return;
+        exit(0);
     }
 
     send(s, request.c_str(), request.size(), 0);
@@ -40,51 +40,45 @@ void sendRequest(string request) {
     WSACleanup();
 }
 
+
+
 int main() {
+    sendRequest("check");
     int choice;
     while (true) {
-        cout << "\n--- Tours Management System ---\n";
-        cout << "1. Add Tour\n2. View Tours\n3. Update Tour\n4. Delete Tour\n5. Exit\nChoose: ";
+        cout << "\nWelcome to tour Management system.\n";
+        cout << "Press 1 for Tour guide Menu.\n";
+        cout << "Press 2 to select from our pre picked Packages for you.\n";
+        cout << "Press 3 for Business Class.\n";
+        cout << "Press 4 for Economy Class.\n";
+        cout << "Press 5 to get the total tours registered.\n";
+        cout << "Press 6 to exit the Program.\n";
+
+        cout << "Choose: ";
         cin >> choice;
 
-        if (choice == 1) {
-            string name, date;
-            float price;
-            int people;
-            cin.ignore();
-            cout << "Name: "; getline(cin, name);
-            cout << "Price: "; cin >> price;
-            cout << "No. of People: "; cin >> people;
-            cin.ignore();
-            cout << "Booking Date: "; getline(cin, date);
-
-            string request = "ADD|" + name + "|" + to_string(price) + "|" + to_string(people) + "|" + date;
-            sendRequest(request);
+        switch (choice) {
+        case 1:
+            sendRequest(guide::showSubMenu());
+            break;
+        case 2:
+            sendRequest(package::showSubMenu());
+            break;
+        case 3:
+            sendRequest(business::showSubMenu());
+            break;
+        case 4:
+           // sendRequest(eco::showSubMenu())
+            break;
+        case 5:
+            cout << "You pressed 5: Total tours registered\n";//implment later
+            // sendRequest("TOTAL_TOURS")
+            break;
+        case 6:
+            cout << "Exiting program...\n";
+            return 0;
+        default:
+            cout << "Invalid choice, please try again.\n";
         }
-        else if (choice == 2) {
-            sendRequest("VIEW|");
-        }
-        else if (choice == 3) {
-            int index;
-            string name, date;
-            float price;
-            int people;
-            cout << "Enter index to update: "; cin >> index;
-            cin.ignore();
-            cout << "New Name: "; getline(cin, name);
-            cout << "New Price: "; cin >> price;
-            cout << "New People: "; cin >> people;
-            cin.ignore();
-            cout << "New Booking Date: "; getline(cin, date);
-            string req = "UPDATE|" + to_string(index) + "|" + name + "|" + to_string(price) + "|" + to_string(people) + "|" + date;
-            sendRequest(req);
-        }
-        else if (choice == 4) {
-            int index;
-            cout << "Enter index to delete: "; cin >> index;
-            sendRequest("DELETE|" + to_string(index));
-        }
-        else break;
     }
-    return 0;
 }

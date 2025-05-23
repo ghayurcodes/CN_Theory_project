@@ -131,6 +131,14 @@
   <ItemGroup>
     <ClCompile Include="server.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="accomodation.h" />
+    <ClInclude Include="business.h" />
+    <ClInclude Include="detail.h" />
+    <ClInclude Include="guide.h" />
+    <ClInclude Include="package.h" />
+    <ClInclude Include="tourist.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

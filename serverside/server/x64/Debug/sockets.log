@@ -1,3 +1,12 @@
 ﻿  server.cpp
-C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\serverside\server.cpp(119,57): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\serverside\detail.h(40,12): warning C4244: 'return': conversion from '__int64' to 'long', possible loss of data
+  (compiling source file 'server.cpp')
+  
+C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\serverside\tourist.h(25,52): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+  (compiling source file 'server.cpp')
+  
+C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\serverside\tourist.h(47,19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  (compiling source file 'server.cpp')
+  
+C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\serverside\server.cpp(69,57): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   sockets.vcxproj -> C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\serverside\x64\Debug\server.exe

@@ -3,86 +3,36 @@
 #include <vector>
 #include <winsock2.h>
 #include <string>
-#pragma comment(lib, "ws2_32.lib")
+#include "guide.h" 
+#include "package.h"
+#include "business.h"
 
+#pragma comment(lib, "ws2_32.lib")
 using namespace std;
 
-class Tour {
-    string name;
-    float price;
-    int people;
-    string book_date;
-public:
-    string serialize() const {  
-        return name + "|" + to_string(price) + "|" + to_string(people) + "|" + book_date;
+string handleRequest(const string& fullRequest) {
+    if (fullRequest == "check") {
+        return "Connection Established successfully.";
     }
 
-    static Tour deserialize(const string& data) {
-        Tour t;
-        string temp = data;
-        size_t pos = 0;
+    // Extract class name
+    size_t pos = fullRequest.find("|");
+    if (pos == string::npos) return "Invalid request format.\n";
 
-        pos = temp.find("|"); t.name = temp.substr(0, pos); temp.erase(0, pos + 1);
-        pos = temp.find("|"); t.price = stof(temp.substr(0, pos)); temp.erase(0, pos + 1);
-        pos = temp.find("|"); t.people = stoi(temp.substr(0, pos)); temp.erase(0, pos + 1);
-        t.book_date = temp;
-        return t;
-    }
-};
+    string className = fullRequest.substr(0, pos);
+    string rest = fullRequest.substr(pos + 1);
 
-vector<Tour> loadTours() {
-    ifstream fin("tours.txt");
-    vector<Tour> tours;
-    string line;
-    while (getline(fin, line)) {
-        tours.push_back(Tour::deserialize(line));
+    if (className == "guide") {
+        return guide::processRequest(rest);
     }
-    return tours;
-}
-
-void saveTours(const vector<Tour>& tours) {
-    ofstream fout("tours.txt");
-    for (const auto& t : tours) {
-        fout << t.serialize() << endl;  
-    }
-}
-
-string handleRequest(string request) {
-    vector<Tour> tours = loadTours();
-    string cmd = request.substr(0, request.find("|"));
-    request.erase(0, cmd.length() + 1);
-
-    if (cmd == "ADD") {
-        tours.push_back(Tour::deserialize(request));
-        saveTours(tours);
-        return "Tour added successfully.\n";
-    }
-    else if (cmd == "VIEW") {
-        if (tours.empty()) return "No tours found.\n";
-        string res;
-        int i = 0;
-        for (const auto& t : tours) {
-            res += "[" + to_string(i++) + "] " + t.serialize() + "\n";
-        }
-        return res;
-    }
-    else if (cmd == "UPDATE") {
-        int index = stoi(request.substr(0, request.find("|")));
-        request.erase(0, request.find("|") + 1);
-        if (index < 0 || index >= (int)tours.size()) return "Invalid index.\n";
-        tours[index] = Tour::deserialize(request);
-        saveTours(tours);
-        return "Tour updated.\n";
-    }
-    else if (cmd == "DELETE") {
-        int index = stoi(request);
-        if (index < 0 || index >= (int)tours.size()) return "Invalid index.\n";
-        tours.erase(tours.begin() + index);
-        saveTours(tours);
-        return "Tour deleted.\n";
+     else if (className == "package") {
+      return package::processRequest(rest);
+     }
+     else if (className == "business") {
+        return business::processRequest(rest);
     }
 
-    return "Unknown command.\n";
+    return "Unknown class type.\n";
 }
 
 int main() {
@@ -108,7 +58,7 @@ int main() {
 
     while ((new_socket = accept(s, (struct sockaddr*)&client, &c)) != INVALID_SOCKET) {
         int recv_size = recv(new_socket, buffer, sizeof(buffer), 0);
-        if (recv_size == SOCKET_ERROR || recv_size == 0) {
+        if (recv_size <= 0) {
             cerr << "Failed to receive data.\n";
             closesocket(new_socket);
             continue;
