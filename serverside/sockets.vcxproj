@@ -137,6 +137,7 @@
     <ClInclude Include="detail.h" />
     <ClInclude Include="guide.h" />
     <ClInclude Include="package.h" />
+    <ClInclude Include="total.h" />
     <ClInclude Include="tourist.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

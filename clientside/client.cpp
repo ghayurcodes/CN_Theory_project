@@ -29,7 +29,7 @@ void sendRequest(string request) {
     char buffer[2048];
     int recv_size = recv(s, buffer, sizeof(buffer), 0);
     if (recv_size > 0) {
-        buffer[recv_size] = '\0';
+        buffer[recv_size] = '\0';//byte to string
         cout << "\nServer: \n" << buffer << endl;
     }
     else {
@@ -50,9 +50,8 @@ int main() {
         cout << "Press 1 for Tour guide Menu.\n";
         cout << "Press 2 to select from our pre picked Packages for you.\n";
         cout << "Press 3 for Business Class.\n";
-        cout << "Press 4 for Economy Class.\n";
-        cout << "Press 5 to get the total tours registered.\n";
-        cout << "Press 6 to exit the Program.\n";
+        cout << "Press 4 to get the total tours registered.\n";
+        cout << "Press 5 to exit the Program.\n";
 
         cout << "Choose: ";
         cin >> choice;
@@ -68,15 +67,12 @@ int main() {
             sendRequest(business::showSubMenu());
             break;
         case 4:
-           // sendRequest(eco::showSubMenu())
+            sendRequest("total");
             break;
         case 5:
-            cout << "You pressed 5: Total tours registered\n";//implment later
-            // sendRequest("TOTAL_TOURS")
-            break;
-        case 6:
             cout << "Exiting program...\n";
-            return 0;
+            break;
+     
         default:
             cout << "Invalid choice, please try again.\n";
         }

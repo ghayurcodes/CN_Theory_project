@@ -6,6 +6,7 @@
 #include "guide.h" 
 #include "package.h"
 #include "business.h"
+#include "total.h"
 
 #pragma comment(lib, "ws2_32.lib")
 using namespace std;
@@ -13,6 +14,9 @@ using namespace std;
 string handleRequest(const string& fullRequest) {
     if (fullRequest == "check") {
         return "Connection Established successfully.";
+    }
+    else if (fullRequest == "total") {
+        return total();
     }
 
     // Extract class name
@@ -28,6 +32,9 @@ string handleRequest(const string& fullRequest) {
      else if (className == "package") {
       return package::processRequest(rest);
      }
+     else if (className == "business") {
+        return business::processRequest(rest);
+    }
      else if (className == "business") {
         return business::processRequest(rest);
     }

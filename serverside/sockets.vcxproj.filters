@@ -37,5 +37,8 @@
     <ClInclude Include="business.h">
       <Filter>Source Files\headerfiles</Filter>
     </ClInclude>
+    <ClInclude Include="total.h">
+      <Filter>Source Files\headerfiles</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

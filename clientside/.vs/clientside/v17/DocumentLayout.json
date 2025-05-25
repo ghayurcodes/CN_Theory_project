@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\clientside\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{171CB7ED-6AAF-4688-B257-0B1510D54BD8}|clientside.vcxproj|C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\clientside\\menus.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{171CB7ED-6AAF-4688-B257-0B1510D54BD8}|clientside.vcxproj|solutionrelative:menus.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{171CB7ED-6AAF-4688-B257-0B1510D54BD8}|clientside.vcxproj|C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\clientside\\client.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{171CB7ED-6AAF-4688-B257-0B1510D54BD8}|clientside.vcxproj|solutionrelative:client.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{171CB7ED-6AAF-4688-B257-0B1510D54BD8}|clientside.vcxproj|C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\clientside\\menus.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{171CB7ED-6AAF-4688-B257-0B1510D54BD8}|clientside.vcxproj|solutionrelative:menus.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,17 +18,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "menus.h",
               "DocumentMoniker": "C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\clientside\\menus.h",
               "RelativeDocumentMoniker": "menus.h",
               "ToolTip": "C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\clientside\\menus.h",
               "RelativeToolTip": "menus.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEBAAAHAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-23T13:52:44.596Z",
               "IsPinned": true,
@@ -40,13 +40,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "client.cpp",
               "DocumentMoniker": "C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\clientside\\client.cpp",
               "RelativeDocumentMoniker": "client.cpp",
               "ToolTip": "C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\clientside\\client.cpp",
               "RelativeToolTip": "client.cpp",
-              "ViewState": "AQIAADQAAAAAAAAAAAAAAE4AAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-18T06:21:59.12Z",
               "EditorCaption": ""
