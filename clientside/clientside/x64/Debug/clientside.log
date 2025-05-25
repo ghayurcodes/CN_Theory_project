@@ -2,30 +2,36 @@
 C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\detail.h(40,16): warning C4244: 'return': conversion from '__int64' to 'long', possible loss of data
   (compiling source file 'client.cpp')
   
-C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\menus.h(187,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\menus.h(185,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   (compiling source file 'client.cpp')
   
-C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\menus.h(193,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\menus.h(191,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   (compiling source file 'client.cpp')
   
-C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\menus.h(199,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\menus.h(197,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   (compiling source file 'client.cpp')
   
-C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\menus.h(205,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\menus.h(203,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   (compiling source file 'client.cpp')
   
-C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\menus.h(247,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\menus.h(245,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   (compiling source file 'client.cpp')
   
-C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\menus.h(253,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\menus.h(251,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   (compiling source file 'client.cpp')
   
-C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\menus.h(259,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\menus.h(257,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   (compiling source file 'client.cpp')
   
-C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\menus.h(265,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\menus.h(263,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  (compiling source file 'client.cpp')
+  
+C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\menus.h(333,15): warning C4101: 'price': unreferenced local variable
+  (compiling source file 'client.cpp')
+  
+C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\menus.h(361,15): warning C4101: 'price': unreferenced local variable
   (compiling source file 'client.cpp')
   
 C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\client.cpp(27,42): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\menus.h(56,1): warning C4715: 'guide::showSubMenu': not all control paths return a value
+C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\menus.h(54,1): warning C4715: 'guide::showSubMenu': not all control paths return a value
   clientside.vcxproj -> C:\Users\lifez\OneDrive\Desktop\CN_Theory_project\clientside\x64\Debug\clientside.exe

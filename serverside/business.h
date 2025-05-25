@@ -1,6 +1,6 @@
 #pragma once
 #include "tourist.h"
-#include "accomodation.h"  // fix spelling: accommodation, not accomodation
+#include "accomodation.h" 
 #include <string>
 #include <vector>
 #include <fstream>
@@ -14,19 +14,19 @@ class business : public tourist {
 private:
     string companyName, jobTitle, meetingPurpose;
     bool needsTransport;
-    accommodation accom;  // no pointer now, just an object
+    accommodation accom;  
 
 public:
     business()
         : companyName(""), jobTitle(""), meetingPurpose(""), needsTransport(false),
-        accom()  // default accommodation ctor
+        accom() 
     {}
 
     business(const string& comp, const string& job, const string& purpose,
         bool transport, int rooms, int people, const string& accomDesc,
         const string& dest, float price, int id, int age, const string& name)
         : companyName(comp), jobTitle(job), meetingPurpose(purpose), needsTransport(transport),
-        accom(rooms, people, accomDesc)  // direct construction
+        accom(rooms, people, accomDesc)  
     {
         this->destination = dest;
         this->price = price;
@@ -35,7 +35,7 @@ public:
         this->tourist_detail.setName(name);
     }
 
-    // No need for destructor anymore, no dynamic allocation
+    
 
     string serialize() {
         stringstream ss;
@@ -66,17 +66,18 @@ public:
 
     static business deserialize(const string& data) {
         vector<string> tokens = split(data, '|');
-        cout << "Tokens size: " << tokens.size() << endl;
+        
 
-        if (tokens.size() != 12) {  // Adjusted to 12 because no pointer splitting
+        if (tokens.size() != 12) {  
             throw runtime_error("Invalid data length for business tourist. Got " + to_string(tokens.size()));
         }
 
-        for (int i : {4, 5, 8, 9, 10}) {
+       /*for (int i : {4, 5, 8, 9, 10}) {
             if (tokens[i].empty()) {
                 throw runtime_error("Empty numeric token at index " + to_string(i));
             }
         }
+       */ 
 
         int rooms = stoi(tokens[4]);
         int people = stoi(tokens[5]);

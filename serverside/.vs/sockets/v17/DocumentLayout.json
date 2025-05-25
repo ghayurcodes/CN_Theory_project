@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{376A632F-3D65-4881-85D8-51600940AEB0}|sockets.vcxproj|C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\total.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{376A632F-3D65-4881-85D8-51600940AEB0}|sockets.vcxproj|solutionrelative:total.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{376A632F-3D65-4881-85D8-51600940AEB0}|sockets.vcxproj|C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\server.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{376A632F-3D65-4881-85D8-51600940AEB0}|sockets.vcxproj|solutionrelative:server.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{376A632F-3D65-4881-85D8-51600940AEB0}|sockets.vcxproj|C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\business.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{376A632F-3D65-4881-85D8-51600940AEB0}|sockets.vcxproj|solutionrelative:business.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{376A632F-3D65-4881-85D8-51600940AEB0}|sockets.vcxproj|C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\package.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -17,22 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{376A632F-3D65-4881-85D8-51600940AEB0}|sockets.vcxproj|C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\guide.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{376A632F-3D65-4881-85D8-51600940AEB0}|sockets.vcxproj|solutionrelative:guide.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{376A632F-3D65-4881-85D8-51600940AEB0}|sockets.vcxproj|C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\tourist.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{376A632F-3D65-4881-85D8-51600940AEB0}|sockets.vcxproj|solutionrelative:tourist.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{376A632F-3D65-4881-85D8-51600940AEB0}|sockets.vcxproj|C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\detail.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{376A632F-3D65-4881-85D8-51600940AEB0}|sockets.vcxproj|solutionrelative:detail.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{376A632F-3D65-4881-85D8-51600940AEB0}|sockets.vcxproj|C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\business.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{376A632F-3D65-4881-85D8-51600940AEB0}|sockets.vcxproj|solutionrelative:business.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{376A632F-3D65-4881-85D8-51600940AEB0}|sockets.vcxproj|C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\accomodation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{376A632F-3D65-4881-85D8-51600940AEB0}|sockets.vcxproj|solutionrelative:accomodation.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,40 +35,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "total.h",
-              "DocumentMoniker": "C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\total.h",
-              "RelativeDocumentMoniker": "total.h",
-              "ToolTip": "C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\total.h",
-              "RelativeToolTip": "total.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-25T10:20:51.782Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "detail.h",
-              "DocumentMoniker": "C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\detail.h",
-              "RelativeDocumentMoniker": "detail.h",
-              "ToolTip": "C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\detail.h",
-              "RelativeToolTip": "detail.h",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACQAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-23T16:29:02.215Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "tourist.h",
-              "DocumentMoniker": "C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\tourist.h",
-              "RelativeDocumentMoniker": "tourist.h",
-              "ToolTip": "C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\tourist.h",
-              "RelativeToolTip": "tourist.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-23T15:42:33.5Z",
+              "Title": "server.cpp",
+              "DocumentMoniker": "C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\server.cpp",
+              "RelativeDocumentMoniker": "server.cpp",
+              "ToolTip": "C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\server.cpp",
+              "RelativeToolTip": "server.cpp",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACMAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-18T06:12:44.529Z",
               "EditorCaption": ""
             },
             {
@@ -95,7 +53,7 @@
               "RelativeDocumentMoniker": "guide.h",
               "ToolTip": "C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\guide.h",
               "RelativeToolTip": "guide.h",
-              "ViewState": "AQIAAFIAAAAAAAAAAADwv3cAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-23T16:32:15.643Z",
               "EditorCaption": ""
@@ -108,7 +66,7 @@
               "RelativeDocumentMoniker": "package.h",
               "ToolTip": "C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\package.h",
               "RelativeToolTip": "package.h",
-              "ViewState": "AQIAACoAAAAAAAAAAADwv08AAAAFAAAA",
+              "ViewState": "AQIAAKcAAAAAAAAAAAAAAMsAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-23T15:38:28.395Z",
               "EditorCaption": ""
@@ -116,40 +74,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "server.cpp",
-              "DocumentMoniker": "C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\server.cpp",
-              "RelativeDocumentMoniker": "server.cpp",
-              "ToolTip": "C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\server.cpp",
-              "RelativeToolTip": "server.cpp",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-18T06:12:44.529Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "business.h",
               "DocumentMoniker": "C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\business.h",
               "RelativeDocumentMoniker": "business.h",
               "ToolTip": "C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\business.h",
               "RelativeToolTip": "business.h",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAADIAAABEAAAA",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAAAFIAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-23T19:45:55.819Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "accomodation.h",
-              "DocumentMoniker": "C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\accomodation.h",
-              "RelativeDocumentMoniker": "accomodation.h",
-              "ToolTip": "C:\\Users\\lifez\\OneDrive\\Desktop\\CN_Theory_project\\serverside\\accomodation.h",
-              "RelativeToolTip": "accomodation.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-23T19:42:18.444Z"
             }
           ]
         }

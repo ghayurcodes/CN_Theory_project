@@ -12,8 +12,6 @@ class guide {
   
 
 public:
- 
-  
 
     static string showSubMenu() {
         int subChoice;
@@ -144,11 +142,11 @@ public:
             if (subChoice == 6) break;
 
             switch (subChoice) {
-            case 1: return addEntry();
-            case 2: return viewAll();
-            case 3: return findEntry();
-            case 4: return updateEntry();
-            case 5: return deleteEntry();
+            case 1: return addEntry(); break;
+            case 2: return viewAll(); break;
+            case 3: return findEntry(); break;
+            case 4: return updateEntry(); break;
+            case 5: return deleteEntry(); break;
             default:
                 cout << "Invalid option, try again.\n";
             }
@@ -318,11 +316,11 @@ public:
             if (subChoice == 6) break;
 
             switch (subChoice) {
-            case 1: return addEntry();
-            case 2: return viewAll();
-            case 3: return findEntry();
-            case 4: return updateEntry();
-            case 5: return deleteEntry();
+            case 1: return addEntry(); break;
+            case 2: return viewAll(); break;
+            case 3: return findEntry(); break;
+            case 4: return updateEntry(); break;
+            case 5: return deleteEntry(); break;
             default: cout << "Invalid option.\n";
             }
         }
@@ -348,12 +346,12 @@ public:
         cin.ignore();
         cout << "Enter Accommodation Description:\n"; getline(cin, accomDesc);
         cout << "Enter Destination:\n"; getline(cin, destination);
-        cout << "Enter Price:\n"; cin >> price; cin.ignore();
+        
 
         return "business|ADD|" + companyName + "|" + jobTitle + "|" + meetingPurpose + "|" +
             (transport == 'y' || transport == 'Y' ? "1" : "0") + "|" +
             to_string(rooms) + "|" + to_string(people) + "|" + accomDesc + "|" +
-            destination + "|" + to_string(price) + "|" +
+            destination + "|" + to_string(200*rooms*people) + "|" +
             to_string(id) + "|" + to_string(age) + "|" + name;
     }
 
@@ -375,12 +373,12 @@ public:
         cout << "Enter new No. of People:\n"; cin >> people; cin.ignore();
         cout << "Enter new Accommodation Description:\n"; getline(cin, accomDesc);
         cout << "Enter new Destination:\n"; getline(cin, destination);
-        cout << "Enter new Price:\n"; cin >> price; cin.ignore();
+      
 
         return "business|UPDATE|" + companyName + "|" + jobTitle + "|" + meetingPurpose + "|" +
             (transport == 'y' || transport == 'Y' ? "1" : "0") + "|" +
             to_string(rooms) + "|" + to_string(people) + "|" + accomDesc + "|" +
-            destination + "|" + to_string(price) + "|" +
+            destination + "|" + to_string(200 * rooms * people) + "|" +
             to_string(id) + "|" + to_string(age) + "|" + name;
     }
 
